@@ -27,7 +27,8 @@ A modern, sophisticated personal portfolio website built with **Node.js & Expres
 - ⚡ **Fast & Lightweight** - Optimized performance with smooth animations
 - 🎯 **Smooth Navigation** - Scroll-to-section functionality with active link highlighting
 - 🔒 **CORS Enabled** - Secure cross-origin resource sharing
-- 📺 **Professional Portfolio Sections** - About, Projects, Skills, and more
+- � **Contact Form** - Client-side validation and submissions sent to a database
+- �📺 **Professional Portfolio Sections** - About, Projects, Skills, and more
 
 ---
 
@@ -89,12 +90,19 @@ portfolio/
    npm install
    ```
 
-3. **Start the development server:**
+3. **Configure environment** (optional for API):
+   - Create a `.env` file with a `MONGO_URL` pointing to your MongoDB Atlas or local instance.
+   - Example:
+     ```
+     MONGO_URL=mongodb://localhost:27017/portfolio
+     ```
+
+4. **Start the development server:**
    ```bash
    npm start
    ```
 
-4. **Open in browser:**
+5. **Open in browser:**
    ```
    http://localhost:3000
    ```

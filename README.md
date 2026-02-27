@@ -88,7 +88,11 @@ portfolio/
    ```bash
    npm install
    ```
-
+3. **Set up environment (for contact API):**
+   ```bash
+   echo MONGO_URL=mongodb://localhost:27017/portfolio > .env
+   # or put your Atlas connection string
+   ```
 3. **Start the development server:**
    ```bash
    npm start
