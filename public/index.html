@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva Nayan S - Web Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-logo">Shiva Nayan S</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <header id="home">
+    <div class="profile-container">
+      <div class="profile-photo-wrapper">
+        <img src="pro.jpeg" alt="Shiva Nayan S" class="profile-photo">
+        <div class="floating-ring"></div>
+      </div>
+    </div>
+    <h1>Hi, I'm Shiva Nayan S</h1>
+    <p>Web Developer | Creative Problem Solver</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer with a strong interest in building responsive and user-friendly websites. 
+      I enjoy working with modern technologies and continuously improving my skills by creating real-world projects. 
+      I am eager to learn, solve problems, and contribute to innovative development teams.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C++</li>
+      <li>Java</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Node.js & Express</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>🎨 Front End Development</h3>
+      <p>Creating beautiful and responsive user interfaces using HTML, CSS, and JavaScript. Focused on delivering exceptional user experiences with modern design principles.</p>
+    </div>
+    <div class="card">
+      <h3>📊 Project Manager</h3>
+      <p>Experienced in managing development projects, coordinating teams, and ensuring timely delivery. Strong focus on quality assurance and client satisfaction.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Email: <a href="mailto:kannan2007priyashiju@gmail.com" style="color: #ffffff;">kannan2007priyashiju@gmail.com</a></p>
+    
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message" style="display: none; margin-top: 20px; padding: 15px; background: rgba(255, 255, 255, 0.2); border-radius: 10px; color: #ffffff;">
+      ✓ Message sent successfully! I'll get back to you soon.
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorMessage" class="error-message" style="display: none; margin-top: 20px; padding: 15px; background: rgba(255, 255, 255, 0.15); border-radius: 10px; color: #ffffff;"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="margin-top: 40px; padding: 20px; text-align: center; opacity: 0.8;">
+    <p>&copy; 2026 Shiva Nayan S. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
