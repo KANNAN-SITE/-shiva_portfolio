@@ -24,10 +24,34 @@ mongoose.connect(mongoURL, {
   console.log('Note: Make sure MongoDB is running. You can start it with: mongod');
 });
 
+// contact model (for local dev)
+const Contact = require('./models/Contact');
+
 // Routes
 // Serve the portfolio page
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
+});
+
+// API endpoint to submit contact form
+app.post('/api/contact', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+
+    // basic validation
+    if (!name || !email || !message) {
+      return res.status(400).json({ success: false, message: 'Please fill in all fields.' });
+    }
+
+    const newContact = new Contact({ name, email, message });
+    await newContact.save();
+    console.log(`New contact: ${name} <${email}>`);
+
+    res.status(201).json({ success: true, message: 'Message sent successfully!' });
+  } catch (err) {
+    console.error('Error saving contact:', err);
+    res.status(500).json({ success: false, message: 'Server error.' });
+  }
 });
 
 
